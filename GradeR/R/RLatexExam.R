@@ -301,7 +301,7 @@ i.test.fun <- compiler::cmpfun( function(
             q.answers, 
             stringr::fixed(str.pattern.correct)))
 
-        out.list <- rte.The.Randomizer(
+        out.list <- RndTexExams::rte.The.Randomizer(
             q.text,
             q.answers, 
             case.now,

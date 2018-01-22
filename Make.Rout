@@ -118,10 +118,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking GradeR ---------------------------------------------------------------
 '/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpEpbYe3/GradeR_0.1.1.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/Rtmp5teJxY/GradeR_0.1.1.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/RtmpEpbYe3/GradeR.Rcheck’
+* using log directory ‘/tmp/Rtmp5teJxY/GradeR.Rcheck’
 * using R version 3.4.1 (2017-06-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8

@@ -1,5 +1,5 @@
 # GradeR
-Functions to Assign Students and Process Grades
+Functions to Make Exams, Assign Students, and Process Grades
 
 
 ## To install latest release from Github: 

@@ -382,7 +382,7 @@ rte.build.rdn.test <- compiler::cmpfun( function(
 
     cat("Done")
 
-    l.def <- rte.get.classes.def(list.in$examclass)
+    l.def <- RndTexExams::rte.get.classes.def(list.in$examclass)
 
     df.out <- lapply( seq(1, n.test),
         FUN=i.test.fun,

@@ -51,7 +51,7 @@ rte.analyze.tex.file <- compiler::cmpfun( function(f.in, bank=TRUE){
 # Latex Export
 ##################
 
-#' 
+#' i.n.cases.correct.answers
 #' @param n.cases.correct.answers
 #' @param q.answers
 #' @param i.answers
@@ -83,7 +83,7 @@ i.n.cases.correct.answers <- compiler::cmpfun( function(
     return(q.answers)
 } )
 
-#' 
+#' q.answers.cases.fun
 #' @param case.now
 #' @param q.answers
 #' @param str.pattern.correct
@@ -131,7 +131,7 @@ q.answers.cases.fun <- compiler::cmpfun( function(
 } )
 
 
-#' 
+#' latexout
 #' @param my.tex.file
 #' @param f.temp.tex
 #' @param bank
@@ -196,7 +196,7 @@ latexout <- compiler::cmpfun( function(
         encoding = "UTF-8")
 } )
 
-#'
+#' i.test.fun 
 #' @param i.test
 #' @param f.out
 #' @param n.test
@@ -350,7 +350,7 @@ i.test.fun <- compiler::cmpfun( function(
     return( df.out )
 } )
 
-#' 
+#' rte.build.rdn.test
 #' @param list.in
 #' @param f.out
 #' @param n.test

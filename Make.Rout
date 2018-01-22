@@ -118,10 +118,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking GradeR ---------------------------------------------------------------
 '/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpI9WlFW/GradeR_0.1.1.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/RtmpEpbYe3/GradeR_0.1.1.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/RtmpI9WlFW/GradeR.Rcheck’
+* using log directory ‘/tmp/RtmpEpbYe3/GradeR.Rcheck’
 * using R version 3.4.1 (2017-06-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
@@ -176,17 +176,11 @@ then use ProfessR::fun() to refer to functions.
 Loading GradeR
 Updating GradeR documentation
 Loading GradeR
-Warning: @title [RLatexExam.R#1]: requires a value
-Warning: @description [RLatexExam.R#1]: requires a value
 Warning: @param [RLatexExam.R#56]: requires name and description
 Warning: @param [RLatexExam.R#57]: requires name and description
-Warning: @title [RLatexExam.R#1]: requires a value
-Warning: @description [RLatexExam.R#1]: requires a value
 Warning: @param [RLatexExam.R#88]: requires name and description
 Warning: @param [RLatexExam.R#89]: requires name and description
 Warning: @param [RLatexExam.R#90]: requires name and description
-Warning: @title [RLatexExam.R#1]: requires a value
-Warning: @description [RLatexExam.R#1]: requires a value
 Warning: @param [RLatexExam.R#136]: requires name and description
 Warning: @param [RLatexExam.R#137]: requires name and description
 Warning: @param [RLatexExam.R#138]: requires name and description
@@ -194,8 +188,6 @@ Warning: @param [RLatexExam.R#139]: requires name and description
 Warning: @param [RLatexExam.R#140]: requires name and description
 Warning: @param [RLatexExam.R#141]: requires name and description
 Warning: @param [RLatexExam.R#142]: requires name and description
-Warning: @title [RLatexExam.R#1]: requires a value
-Warning: @description [RLatexExam.R#1]: requires a value
 Warning: @param [RLatexExam.R#201]: requires name and description
 Warning: @param [RLatexExam.R#202]: requires name and description
 Warning: @param [RLatexExam.R#203]: requires name and description
@@ -206,8 +198,6 @@ Warning: @param [RLatexExam.R#207]: requires name and description
 Warning: @param [RLatexExam.R#209]: requires name and description
 Warning: @param [RLatexExam.R#210]: requires name and description
 Warning: @param [RLatexExam.R#211]: requires name and description
-Warning: @title [RLatexExam.R#1]: requires a value
-Warning: @description [RLatexExam.R#1]: requires a value
 Warning: @param [RLatexExam.R#355]: requires name and description
 Warning: @param [RLatexExam.R#356]: requires name and description
 Warning: @param [RLatexExam.R#357]: requires name and description
@@ -223,6 +213,11 @@ Warning: @param [RLatexExam.R#436]: requires name and description
 Writing NAMESPACE
 Writing my.test.comment.Rd
 Writing rte.analyze.tex.file.Rd
+Writing i.n.cases.correct.answers.Rd
+Writing q.answers.cases.fun.Rd
+Writing latexout.Rd
+Writing i.test.fun.Rd
+Writing rte.build.rdn.test.Rd
 Writing rand_fun.Rd
 Writing groups2student.Rd
 Writing random.matrix.Rd
@@ -233,12 +228,6 @@ Writing students2weeks.print.Rd
 Writing score_calc.Rd
 Writing letter_calc.Rd
 Writing grade_plot.Rd
-Warning messages:
-1: i.n.cases.correct.answers.Rd is missing name/title. Skipping 
-2: q.answers.cases.fun.Rd is missing name/title. Skipping 
-3: latexout.Rd is missing name/title. Skipping 
-4: i.test.fun.Rd is missing name/title. Skipping 
-5: rte.build.rdn.test.Rd is missing name/title. Skipping 
 > 
 > pack_up(pdir)
 /home/Jadamso/Desktop/Packages/GradeR/ is required to already be on github

@@ -1,0 +1,19 @@
+Package: GradeR
+Title: GradeR
+Version: 0.1.1
+Authors@R: person("Jordan", "Adamson",
+        email="jordan.m.adamson@gmail.com",
+        role=c("aut","cre"))
+Description: See my website <https://sites.google.com/a/g.clemson.edu/ja-resources>. or github <https://github.com/Jadamso>.
+Depends: R (>= 3.4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Published: 2018-01-08
+Date: 2018-01-08
+URL: https://sites.google.com/a/g.clemson.edu/ja-resources
+RoxygenNote: 6.0.1
+Imports: stargazer,
+    RndTexExams
+Suggests: exams,
+    ProfessR

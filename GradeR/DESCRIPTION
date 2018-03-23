@@ -9,8 +9,8 @@ Depends: R (>= 3.4.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Published: 2018-01-21
-Date: 2018-01-21
+Published: 2018-03-23
+Date: 2018-03-23
 URL: https://sites.google.com/a/g.clemson.edu/ja-resources
 RoxygenNote: 6.0.1
 Imports: stargazer,

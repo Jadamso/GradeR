@@ -20,16 +20,20 @@ options(devtools.name="Jordan Adamson",
 # Package Description
 ################## 
 
-Title <- pack
-URL   <- 'https://sites.google.com/a/g.clemson.edu/ja-resources'
-Description <- 'See my website <https://sites.google.com/a/g.clemson.edu/ja-resources>. or github <https://github.com/Jadamso>.'
+Title <- 'Functions to make exams, plot grades, ...'
+Description <- ' '
 #This projects adheres to semantic versioning <http://semver.org/>
-Maint <- "'Jordan Adamson<jordan.m.adamson@gmail.com>'"
+
+URL   <- paste0(' <https://github.com/Jadamso/',pack,'>')
+#'https://sites.google.com/a/g.clemson.edu/ja-resources'
+Maint <- "Jordan Adamson <jordan.m.adamson@gmail.com>"
+Author <- "Jordan Adamson [aut, cre]"
 
 
 my_description <- list(
-    # "Maintainer" = Maint, 
     "Title"      = Title,
+    "Author"     = Author,
+    "Maintainer" = Maint, 
     "Description"= Description,
     "Published"  = Sys.Date(),
     "Date"       = Sys.Date(),
@@ -40,6 +44,7 @@ my_description <- list(
         role=c("aut","cre"))'
 )
 options(devtools.desc=my_description)
+
 #------------------------------------------------------------------
 ##################
 # Create Package

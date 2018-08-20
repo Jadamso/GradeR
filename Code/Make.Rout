@@ -129,10 +129,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking GradeR ---------------------------------------------------------------
 '/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpyPC4pl/GradeR_0.1.2.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/RtmpOOpoYz/GradeR_0.1.2.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/RtmpyPC4pl/GradeR.Rcheck’
+* using log directory ‘/tmp/RtmpOOpoYz/GradeR.Rcheck’
 * using R version 3.5.0 (2018-04-23)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
@@ -144,7 +144,7 @@ Required field missing or empty:
 
 Status: 1 ERROR
 See
-  ‘/tmp/RtmpyPC4pl/GradeR.Rcheck/00check.log’
+  ‘/tmp/RtmpOOpoYz/GradeR.Rcheck/00check.log’
 for details.
 
 > 

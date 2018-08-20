@@ -268,7 +268,7 @@ students2weeks.format <- compiler::cmpfun( function(
 ##################
 #' 
 #' @param discussants list/matrix of discussants
-#' @param w number of weeks
+#' @param w_start,w_end number of weeks, set w_start=2 if noone reads first week
 #' @param rdir directory to write discussants to
 #' 
 #' @return a vector
@@ -280,10 +280,11 @@ students2weeks.format <- compiler::cmpfun( function(
 
 students2weeks.print <- compiler::cmpfun( function(
     discussants,
-    w=13,
+    w_start=1,
+    w_end=13,
     rdir){
     
-    for( week in  1:w ) {
+    for( week in  w_start:w_end ) {
 
         d_id <- which(discussants==week, arr.ind=TRUE)[,1]
         discussant_week <- rownames(discussants[ d_id, ])

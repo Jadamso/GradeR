@@ -4,12 +4,12 @@
 \alias{students2weeks.print}
 \title{Write A Latex Table for Each Week}
 \usage{
-students2weeks.print(discussants, w = 13, rdir)
+students2weeks.print(discussants, w_start = 1, w_end = 13, rdir)
 }
 \arguments{
 \item{discussants}{list/matrix of discussants}
 
-\item{w}{number of weeks}
+\item{w_start, w_end}{number of weeks, set w_start=2 if noone reads first week}
 
 \item{rdir}{directory to write discussants to}
 }

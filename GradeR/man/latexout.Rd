@@ -4,8 +4,8 @@
 \alias{latexout}
 \title{latexout}
 \usage{
-latexout(my.tex.file, f.temp.tex, bank, exam.class, str.pattern.end.mchoice,
-  my.last.part, qtext, Qend = TRUE)
+latexout(my.tex.file, f.temp.tex, bank, exam.class,
+  str.pattern.end.mchoice, my.last.part, qtext, Qend = TRUE)
 }
 \arguments{
 \item{Qend=TRUE}{}

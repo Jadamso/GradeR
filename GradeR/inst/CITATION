@@ -1,13 +1,13 @@
 bibentry(bibtype = "Manual",
-         textVersion = "Jordan Adamson (2018). GradeR: GradeR. R package version 0.1.1.",
+         textVersion = "Jordan Adamson (2018). GradeR: Functions to make exams, plot grades, .... R package version 0.1.2.",
          header = "To cite package 'GradeR' in publications use:",
          key = "GradeR",
-         title = "{GradeR}: GradeR",
+         title = "{GradeR}: Functions to make exams, plot grades, ...",
          author = person(given = "'Jordan",
                          family = "Adamson'",
                          role = c("aut", "cre"),
                          email = "jordan.m.adamson@gmail.com"),
          year = "2018",
-         month = "3",
-         note = "R package version 0.1.1",
-         url = "https://sites.google.com/a/g.clemson.edu/ja-resources")
+         month = "8",
+         note = "R package version 0.1.2",
+         url = " <https://github.com/Jadamso/GradeR>")

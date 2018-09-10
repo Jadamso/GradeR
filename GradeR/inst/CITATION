@@ -8,6 +8,6 @@ bibentry(bibtype = "Manual",
                          role = c("aut", "cre"),
                          email = "jordan.m.adamson@gmail.com"),
          year = "2018",
-         month = "8",
+         month = "9",
          note = "R package version 0.1.2",
          url = " <https://github.com/Jadamso/GradeR>")

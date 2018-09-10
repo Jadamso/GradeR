@@ -27,7 +27,7 @@ source('~/Desktop/Packages/MiscUtils/RCheats.R')
 wideScreen() 
 
 [38;5;11m     USER INFORMATION: [0m
-Jordan Adamson, 2018-08-20
+Jordan Adamson, 2018-09-09
 
 > #-------------------------------------------------------------------
 > ##################
@@ -76,8 +76,8 @@ Encoding: UTF-8
 LazyData: true
 Author: Jordan Adamson [aut, cre]
 Maintainer: Jordan Adamson <jordan.m.adamson@gmail.com>
-Published: 2018-08-20
-Date: 2018-08-20
+Published: 2018-09-09
+Date: 2018-09-09
 URL: <https://github.com/Jadamso/GradeR>
 
 To cite package 'GradeR' in publications use:
@@ -91,7 +91,7 @@ A BibTeX entry for LaTeX users is
     title = {{GradeR}: Functions to make exams, plot grades, ...},
     author = {'Jordan Adamson'},
     year = {2018},
-    month = {8},
+    month = {9},
     note = {R package version 0.1.2},
     url = { <https://github.com/Jadamso/GradeR>},
   }
@@ -129,10 +129,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking GradeR ---------------------------------------------------------------
 '/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpOOpoYz/GradeR_0.1.2.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/RtmpsDZlW9/GradeR_0.1.2.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/RtmpOOpoYz/GradeR.Rcheck’
+* using log directory ‘/tmp/RtmpsDZlW9/GradeR.Rcheck’
 * using R version 3.5.0 (2018-04-23)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
@@ -144,7 +144,7 @@ Required field missing or empty:
 
 Status: 1 ERROR
 See
-  ‘/tmp/RtmpOOpoYz/GradeR.Rcheck/00check.log’
+  ‘/tmp/RtmpsDZlW9/GradeR.Rcheck/00check.log’
 for details.
 
 > 

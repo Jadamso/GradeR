@@ -280,8 +280,8 @@ students2weeks.format <- compiler::cmpfun( function(
 
 students2weeks.print <- compiler::cmpfun( function(
     discussants,
-    w_start=min(discussants),
-    w_end=max(discussants),
+    w_start=min(discussants,na.rm=T),
+    w_end=max(discussants,na.rm=T),
     rdir){
     
     for( week in  w_start:w_end ) {

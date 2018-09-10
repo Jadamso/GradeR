@@ -4,8 +4,8 @@
 \alias{students2weeks.print}
 \title{Write A Latex Table for Each Week}
 \usage{
-students2weeks.print(discussants, w_start = min(discussants),
-  w_end = max(discussants), rdir)
+students2weeks.print(discussants, w_start = min(discussants, na.rm = T),
+  w_end = max(discussants, na.rm = T), rdir)
 }
 \arguments{
 \item{discussants}{list/matrix of discussants}

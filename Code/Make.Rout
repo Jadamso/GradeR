@@ -248,3 +248,75 @@ file ‘GradeR.pdf’ exists; please remove it first
 > 
 > MiscUtils::pack_up(pdir)
 /home/Jadamso2/Desktop/Packages/GradeR/ is required to already be on github
+To https://github.com/Jadamso/GradeR.git
+   ae00718..012a71d  master -> master
+[1] "/home/Jadamso2/Desktop/Packages/GradeR/"
+> ## https://www.rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.pdf
+> 
+> devtools::install(packg) ## Locally Works
+Installing GradeR
+'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD INSTALL  \
+  '/home/Jadamso2/Desktop/Packages/GradeR/GradeR'  \
+  --library='/home/Jadamso2/R-Libs' --install-tests 
+
+* installing *source* package ‘GradeR’ ...
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (GradeR)
+Reloading installed GradeR
+> 
+> devtools::install_github( paste0("Jadamso/",pack), subdir=pack)
+Downloading GitHub repo Jadamso/GradeR@master
+from URL https://api.github.com/repos/Jadamso/GradeR/zipball/master
+Installing GradeR
+'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD INSTALL  \
+  '/tmp/RtmpsDZlW9/devtools24375488547e/Jadamso-GradeR-012a71d/GradeR'  \
+  --library='/home/Jadamso2/R-Libs' --install-tests 
+
+* installing *source* package ‘GradeR’ ...
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (GradeR)
+Reloading installed GradeR
+> 
+> citation(pack)
+
+To cite package 'GradeR' in publications use:
+
+  Jordan Adamson (2018). GradeR: Functions to make exams, plot grades,
+  .... R package version 0.1.2.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{GradeR,
+    title = {{GradeR}: Functions to make exams, plot grades, ...},
+    author = {'Jordan Adamson'},
+    year = {2018},
+    month = {9},
+    note = {R package version 0.1.2},
+    url = { <https://github.com/Jadamso/GradeR>},
+  }
+
+> 
+> print("Done")
+[1] "Done"
+> 
+> ## R CMD BATCH --no-save Code/Make.R Code/Make.Rout
+> #cp ~/Desktop/Teaching/IntroMacro/Current/Records/{ExamMaker.R,Grades.R,StudentAssignment.R} ~/Desktop/Packages/GradeR/Examples
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  5.186   0.757  12.550 

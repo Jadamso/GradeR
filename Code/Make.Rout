@@ -1,7 +1,7 @@
 
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
 Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)
+Platform: x86_64-redhat-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -22,12 +22,12 @@ Type 'q()' to quit R.
 source('~/Desktop/Packages/MiscUtils/RCheats.R') 
 
 [38;5;11m     R INFORMATION: [0m
-/home/Jadamso2/lib64/R/bin/exec/R -f Code/Make.R --restore --save --no-readline --no-save 
+/usr/lib64/R/bin/exec/R -f Code/Make.R --restore --save --no-readline --no-save 
 ~/Rprofile.site 
 wideScreen() 
 
 [38;5;11m     USER INFORMATION: [0m
-Jordan Adamson, 2018-09-09
+Jordan Adamson, 2018-11-06
 
 > #-------------------------------------------------------------------
 > ##################
@@ -60,25 +60,6 @@ The following object is masked from ‘package:base’:
 > # Setup R Package
 > source(paste0(pdir,"Code/PackageSetup.R") )
 Creating package 'GradeR' in '/home/Jadamso2/Desktop/Packages/GradeR'
-No DESCRIPTION found. Creating with values:
-
-
-Package: GradeR
-Title: Functions to make exams, plot grades, ...
-Version: 0.1.2
-Authors@R: person("Jordan", "Adamson",
-        email="jordan.m.adamson@gmail.com",
-        role=c("aut","cre"))
-Description: 
-Depends: R (>= 3.5.0)
-License: What license is it under?
-Encoding: UTF-8
-LazyData: true
-Author: Jordan Adamson [aut, cre]
-Maintainer: Jordan Adamson <jordan.m.adamson@gmail.com>
-Published: 2018-09-09
-Date: 2018-09-09
-URL: <https://github.com/Jadamso/GradeR>
 
 To cite package 'GradeR' in publications use:
 
@@ -91,232 +72,25 @@ A BibTeX entry for LaTeX users is
     title = {{GradeR}: Functions to make exams, plot grades, ...},
     author = {'Jordan Adamson'},
     year = {2018},
-    month = {9},
+    month = {11},
     note = {R package version 0.1.2},
     url = { <https://github.com/Jadamso/GradeR>},
   }
 
-* Updating license field in DESCRIPTION.
-* Creating `LICENSE` from template.
-Creating package 'GradeR' in '/home/Jadamso2/Desktop/Packages/GradeR'
-Updating GradeR documentation
-Loading GradeR
-Updating roxygen version in /home/Jadamso2/Desktop/Packages/GradeR/GradeR/DESCRIPTION
-Writing NAMESPACE
-Setting env vars --------------------------------------------------------------
-CFLAGS  : -Wall -pedantic
-CXXFLAGS: -Wall -pedantic
-Building GradeR ---------------------------------------------------------------
-'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD build  \
-  '/home/Jadamso2/Desktop/Packages/GradeR/GradeR' --no-resave-data  \
-  --no-manual 
-
-* checking for file ‘/home/Jadamso2/Desktop/Packages/GradeR/GradeR/DESCRIPTION’ ... OK
-* preparing ‘GradeR’:
-* checking DESCRIPTION meta-information ... OK
-* checking for LF line-endings in source and make files and shell scripts
-* checking for empty or unneeded directories
-Removed empty directory ‘GradeR/R’
-Removed empty directory ‘GradeR/data’
-Removed empty directory ‘GradeR/inst/extdata’
-Removed empty directory ‘GradeR/man’
-* building ‘GradeR_0.1.2.tar.gz’
-
-Setting env vars --------------------------------------------------------------
-_R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
-_R_CHECK_CRAN_INCOMING_           : FALSE
-_R_CHECK_FORCE_SUGGESTS_          : FALSE
-Checking GradeR ---------------------------------------------------------------
-'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpsDZlW9/GradeR_0.1.2.tar.gz'  \
-  --as-cran --timings --no-manual 
-
-* using log directory ‘/tmp/RtmpsDZlW9/GradeR.Rcheck’
-* using R version 3.5.0 (2018-04-23)
-* using platform: x86_64-pc-linux-gnu (64-bit)
-* using session charset: UTF-8
-* using options ‘--no-manual --as-cran’
-* checking for file ‘GradeR/DESCRIPTION’ ... ERROR
-Required field missing or empty:
-  ‘Description’
-* DONE
-
-Status: 1 ERROR
-See
-  ‘/tmp/RtmpsDZlW9/GradeR.Rcheck/00check.log’
-for details.
-
-> 
-> # Create R Package Contents
-> source(paste0(pdir,"Code/CodeSetup.R") )
-* Adding stargazer to Imports
-Next: 
-Refer to functions with stargazer::fun()
-* Adding RndTexExams to Imports
-Next: 
-Refer to functions with RndTexExams::fun()
-* Adding exams to Suggests
-Next: 
-Use requireNamespace("exams", quietly = TRUE) to test if package is installed,
-then use exams::fun() to refer to functions.
-* Adding ProfessR to Suggests
-Next: 
-Use requireNamespace("ProfessR", quietly = TRUE) to test if package is installed,
-then use ProfessR::fun() to refer to functions.
-Loading GradeR
-Updating GradeR documentation
-Loading GradeR
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#56]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#57]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#88]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#89]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#90]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#136]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#137]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#138]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#139]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#140]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#141]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#142]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#201]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#202]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#203]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#204]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#205]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#206]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#207]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#209]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#210]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#211]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#355]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#356]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#357]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#358]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#359]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#360]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#361]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#432]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#433]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#434]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#435]: requires name and description
-Warning: @param [/home/Jadamso2/Desktop/Packages/GradeR/GradeR/R/RLatexExam.R#436]: requires name and description
-Writing NAMESPACE
-Writing my.test.comment.Rd
-Writing rte.analyze.tex.file.Rd
-Writing i.n.cases.correct.answers.Rd
-Writing q.answers.cases.fun.Rd
-Writing latexout.Rd
-Writing i.test.fun.Rd
-Writing rte.build.rdn.test.Rd
-Writing rand_fun.Rd
-Writing groups2student.Rd
-Writing random.matrix.Rd
-Writing students2weeks.matrix.Rd
-Writing students2weeks.matrix2.Rd
-Writing students2weeks.format.Rd
-Writing students2weeks.print.Rd
-Writing score_calc.Rd
-Writing letter_calc.Rd
-Writing grade_plot.Rd
-> 
-> devtools::build(pkg=packg, manual=TRUE)
-'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD build  \
-  '/home/Jadamso2/Desktop/Packages/GradeR/GradeR' --no-resave-data 
-
-* checking for file ‘/home/Jadamso2/Desktop/Packages/GradeR/GradeR/DESCRIPTION’ ... OK
-* preparing ‘GradeR’:
-* checking DESCRIPTION meta-information ... OK
-* checking for LF line-endings in source and make files and shell scripts
-* checking for empty or unneeded directories
-Removed empty directory ‘GradeR/data’
-Removed empty directory ‘GradeR/inst/extdata’
-* building ‘GradeR_0.1.2.tar.gz’
-
-[1] "/home/Jadamso2/Desktop/Packages/GradeR/GradeR_0.1.2.tar.gz"
-> 
-> system( paste0('R CMD Rd2pdf ', packg) )
-Hmm ... looks like a package
-file ‘GradeR.pdf’ exists; please remove it first
-> #devtools::check_built(manual=TRUE, path=packg)
-> 
-> #-------------------------------------------------------------------
-> ##################
-> # Upload and Install 
-> ##################
-> 
-> MiscUtils::pack_up(pdir)
-/home/Jadamso2/Desktop/Packages/GradeR/ is required to already be on github
-To https://github.com/Jadamso/GradeR.git
-   ae00718..012a71d  master -> master
-[1] "/home/Jadamso2/Desktop/Packages/GradeR/"
-> ## https://www.rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.pdf
-> 
-> devtools::install(packg) ## Locally Works
-Installing GradeR
-'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD INSTALL  \
-  '/home/Jadamso2/Desktop/Packages/GradeR/GradeR'  \
-  --library='/home/Jadamso2/R-Libs' --install-tests 
-
-* installing *source* package ‘GradeR’ ...
-** R
-** inst
-** byte-compile and prepare package for lazy loading
-** help
-*** installing help indices
-** building package indices
-** testing if installed package can be loaded
-* DONE (GradeR)
-Reloading installed GradeR
-> 
-> devtools::install_github( paste0("Jadamso/",pack), subdir=pack)
-Downloading GitHub repo Jadamso/GradeR@master
-from URL https://api.github.com/repos/Jadamso/GradeR/zipball/master
-Installing GradeR
-'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD INSTALL  \
-  '/tmp/RtmpsDZlW9/devtools24375488547e/Jadamso-GradeR-012a71d/GradeR'  \
-  --library='/home/Jadamso2/R-Libs' --install-tests 
-
-* installing *source* package ‘GradeR’ ...
-** R
-** inst
-** byte-compile and prepare package for lazy loading
-** help
-*** installing help indices
-** building package indices
-** testing if installed package can be loaded
-* DONE (GradeR)
-Reloading installed GradeR
-> 
-> citation(pack)
-
-To cite package 'GradeR' in publications use:
-
-  Jordan Adamson (2018). GradeR: Functions to make exams, plot grades,
-  .... R package version 0.1.2.
-
-A BibTeX entry for LaTeX users is
-
-  @Manual{GradeR,
-    title = {{GradeR}: Functions to make exams, plot grades, ...},
-    author = {'Jordan Adamson'},
-    year = {2018},
-    month = {9},
-    note = {R package version 0.1.2},
-    url = { <https://github.com/Jadamso/GradeR>},
-  }
-
-> 
-> print("Done")
-[1] "Done"
-> 
-> ## R CMD BATCH --no-save Code/Make.R Code/Make.Rout
-> #cp ~/Desktop/Teaching/IntroMacro/Current/Records/{ExamMaker.R,Grades.R,StudentAssignment.R} ~/Desktop/Packages/GradeR/Examples
-> 
-> 
-> proc.time()
-   user  system elapsed 
-  5.186   0.757  12.550 
+Warning in warn_unless_current_dir(pkg) :
+  `pkg` is not `.`, which is now unsupported.
+  Please use `usethis::proj_set()` to set the project directory.
+Error in usethis::use_mit_license(copyright_holder = copyright_holder) : 
+  unused argument (copyright_holder = copyright_holder)
+Calls: source -> withVisible -> eval -> eval -> <Anonymous>
+In addition: Warning messages:
+1: 'devtools::setup' is deprecated.
+Use 'usethis::create_package()' instead.
+See help("Deprecated") and help("devtools-deprecated"). 
+2: 'create_description' is deprecated.
+Use 'usethis::use_description()' instead.
+See help("Deprecated") and help("devtools-deprecated"). 
+3: 'devtools::use_mit_license' is deprecated.
+Use 'usethis::use_mit_license()' instead.
+See help("Deprecated") and help("devtools-deprecated"). 
+Execution halted

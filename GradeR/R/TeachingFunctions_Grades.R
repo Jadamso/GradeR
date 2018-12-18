@@ -78,31 +78,37 @@ letter_calc <- compiler::cmpfun( function(
 grade_plot <- compiler::cmpfun( function(
     pdfname,
     score,
-    cuts){
+    cuts,
+    breaks=seq(50,100,by=1),
+    ymin=NA,
+    ymax=NA){
 
     #tikzDevice::tikz( paste0(hdir, "Exam2.tex" ) )
     pdf( pdfname )
     
         ## Distribution of Grades
         h <- hist(score,
-            breaks=50,
+            breaks=breaks,
             col=rgb(0,0,0,.1),
             main="Frequency of Class Scores",
             xlab="Score (%)",
             ylab="# Students")
             
         ## CutPoints for Letter Grades
+        ymax <-ifelse(is.na(ymax), max(h$counts), ymax)
+        ymin <-ifelse(is.na(ymin), 0, ymin)
         for(i in 1:nrow(cuts) ) {
-            abline(v=cuts[i,1], col="red")
-            text( x=cuts[i,1], y=-0.1, cuts[i,2], adj=0, col="red")
+            segments(x0=cuts[i,1], y0=ymin, y1=ymax, col="red")
+            text( x=cuts[i,1], y=ymin, #pos=1, #-1/30*ymax
+                cuts[i,2], adj=c(0,1), col="red")
         }
         
         ## Mean Score
         m <- round( mean(score, na.rm=TRUE) )
         abline(v=m, lty=2, col="blue")
-        text(x=m, y=max(h$counts),
-            paste0("m=",m),
-            adj=c(0.5,-0.5), col="blue")
+        text(x=m, y=ymax,
+            paste0("mean\n",m),
+            adj=c(.5,.5), col="blue")
 
     dev.off()
 })

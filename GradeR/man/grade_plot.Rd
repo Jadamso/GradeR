@@ -4,7 +4,8 @@
 \alias{grade_plot}
 \title{Calculate Grades}
 \usage{
-grade_plot(pdfname, score, cuts)
+grade_plot(pdfname, score, cuts, breaks = seq(50, 100, by = 1),
+  ymin = NA, ymax = NA)
 }
 \arguments{
 \item{pdfname}{name of pdf file}

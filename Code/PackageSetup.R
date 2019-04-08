@@ -54,7 +54,7 @@ options(devtools.desc=my_description)
 
 # license warning goes away with next code block
 package.setup.safe(packg, check=F)
-
+#usethis::create_package(packg)
 
 rdir    <- paste0(packg, "/R")
 ddir    <- paste0(packg, "/data/")
@@ -104,7 +104,9 @@ writeLines(
 ################## 
 
 options( devtools.desc.license='MIT + file LICENSE' )
-devtools::use_mit_license(packg)
+usethis::proj_activate(packg)
+usethis::use_mit_license(packg)
+
 #writeLines( c( paste0("YEAR: ", year), "COPYRIGHT HOLDER: Jordan Adamson"), con=paste0( packg, "/LICENSE") )
 
 package.setup.safe(packg, check=T)

@@ -80,7 +80,7 @@ grade_plot <- compiler::cmpfun( function(
     score,
     cuts,
     breaks=seq(50,100,by=1),
-    ymin=-.05,
+    ymin=NA,
     ymax=NA){
 
     #tikzDevice::tikz( paste0(hdir, "Exam2.tex" ) )
@@ -96,10 +96,11 @@ grade_plot <- compiler::cmpfun( function(
             
         ## CutPoints for Letter Grades
         ymax <-ifelse(is.na(ymax), max(h$counts), ymax)
+        ymin <-ifelse(is.na(ymin), 0, ymin)
         for(i in 1:nrow(cuts) ) {
             segments(x0=cuts[i,1], y0=ymin, y1=ymax, col="red")
             text( x=cuts[i,1], y=ymin, #pos=1, #-1/30*ymax
-                cuts[i,2], adj=0, col="red")
+                cuts[i,2], adj=c(0,1), col="red")
         }
         
         ## Mean Score
